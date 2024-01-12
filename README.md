@@ -18,7 +18,6 @@ Our objective is to develop an advanced system capable of responding to inquirie
     - [Model Training](#model-training)
     - [Code Modification](#code-modification)
 
-
 # Download the Dataset and Data Analysis
 
 a. **VizWiz Dataset Overview:**
