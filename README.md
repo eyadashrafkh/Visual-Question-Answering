@@ -2,6 +2,22 @@
 Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. VQA has many applications: Medical VQA, Education purposes, for surveillance and numerous other applications. 
 Our objective is to develop an advanced system capable of responding to inquiries about images with the aim of helping visually impaired people, leveraging cutting-edge deep learning techniques and using [VizWiz dataset](https://www.kaggle.com/datasets/ingbiodanielh/vizwiz).
 
+## Table of Contents
+
+1. [Visual-Question-Answering](#visual-question-answering)
+2. [Download the Dataset and Data Analysis](#download-the-dataset-and-data-analysis)
+    - [VizWiz Dataset Overview](#vizwiz-dataset-overview)
+    - [Dataset Link](#dataset-link)
+    - [Test Data](#test-data)
+    - [Data Analysis](#data-analysis)
+    - [Data Mounting with Kaggle](#data-mounting-with-kaggle)
+    - [Data Processing](#data-processing)
+3. [Building the Model](#building-the-model)
+    - [Implementation Reference](#implementation-reference)
+    - [Utilize Pre-trained Models](#utilize-pre-trained-models)
+    - [Model Training](#model-training)
+    - [Code Modification](#code-modification)
+
 
 # Download the Dataset and Data Analysis
 
