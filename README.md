@@ -22,7 +22,7 @@ Our objective is to develop an advanced system capable of responding to inquirie
 
 # Download the Dataset and Data Analysis
 
-## **VizWiz Dataset Overview:**
+### **VizWiz Dataset Overview:**
    - VizWiz is a Visual Question Answering (VQA) dataset containing 20,500 image/question pairs.
    - Each image is associated with a corresponding question and has 10 answers to that question.
      i. 20,523 training image/question pairs
@@ -30,30 +30,30 @@ Our objective is to develop an advanced system capable of responding to inquirie
      iii. 4,319 validation image/question pairs
      iv. 43,190 validation answer/answer confidence pairs
 
-## **Dataset Link:**
+###**Dataset Link:**
    - The dataset can be found at the following link: [VizWiz Dataset](https://www.kaggle.com/datasets/ingbiodanielh/vizwiz)
 
-## **Test Data:**
+### **Test Data:**
    - Take 5% of the training data as test data.
 
-## **Data Analysis:**
+### **Data Analysis:**
    - Perform a comprehensive analysis of the data and present a comprehensible histogram.
 
-## **Data Mounting with Kaggle:**
+### **Data Mounting with Kaggle:**
    - Utilize Kaggle to instantly mount the data without any hassle.
 
-## **Data Processing:**
+### **Data Processing:**
    - Set seed to 42 and use stratification while considering that answer/answer confidence pairs correspond to the images and questions.
 
 # Building the Model
 
-## **Implementation Reference:**
+### **Implementation Reference:**
    - Follow the implementation details provided in the paper [2206.05281v1.pdf](https://arxiv.org/abs/2206.05281v1).
 
-## **Utilize Pre-trained Models:**
+### **Utilize Pre-trained Models:**
    - Use the CLIP model's image encoder and text encoder provided by OpenAI. The relevant paper and GitHub repository can be found in [2103.00020.pdf](https://arxiv.org/abs/2103.00020).
 
-## **Model Training:**
+### **Model Training:**
    - Train the classification layers following the paper's approach.
    - Concatenate resulting features from image and text encoders, pass them through linear layers with layer normalization, and apply a high dropout value (0.5).
    - Predict answer types and answers using an additional linear layer.
@@ -61,6 +61,6 @@ Our objective is to develop an advanced system capable of responding to inquirie
    - Train the linear classifier using cross entropy loss with rotation as image augmentation.
    - Train only the additional linear classifier, keeping the CLIP model frozen. This allows fast and efficient training without large computational resources.
 
-## **Code Modification:**
+### **Code Modification:**
    - Modify the provided PyTorch code from the CLIP repository to implement this specific model.
 
